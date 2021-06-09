@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    background-color: black;
+}
+
+.container{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    background-color: #222222;
+    border: 3px solid green;
+    border-radius:4px;
+    margin-top: 50px;
+}
+
+.ball{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /* background-color:yellow; */
+    border-radius:35px;
+}
+img{
+    width: 60px;
+    height: 60px;
+}
+
+.paddle1{  
+    position: relative;
+    display: inline-block;
+    left:970px;
+    top:190px;  /* min top is -60; max top is 440px */
+    width: 30px;
+    height: 100px;
+    color: aliceblue;
+    font-size: small;
+    background-color:rgb(192, 11, 11);
+    border-radius:2px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    overflow:hidden;
+}
+
+.paddle2{
+    position: relative;
+    display: inline-block;
+    left:-34px;
+    top: 190px; /* minimum top is -60px max top is 440 */
+    width: 30px;
+    height: 100px;
+    color: aliceblue;
+    background-color:rgb(54, 54, 179);
+    font-size: small;
+    border-radius:2px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    overflow:hidden;
+}
+.score{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    margin-top: 660px;
+}
